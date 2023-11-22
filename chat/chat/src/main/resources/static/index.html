@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zespo - Chat Application</title>
+    <link rel="stylesheet" href="./cssStyleSheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
+<body>
+    <div id="userNameForm" class="centrePanel" style="visibility: hidden;">
+        <h1 class="heading">Zespo - Chat Application</h1>
+        <img src="./chatLogo.png" alt="chat-logo" width="60%" height="40%" style="margin-left: 5rem;">
+        <div class="form">
+            <h3>Type your username below</h3>
+            <input class="inputField" type="text" placeholder="Enter your username" autocomplete="off">
+            <button id="enterButton" class="enterBtn">Enter the group</button>
+        </div>
+    </div>
+    <div id="chatForm" class="centrePanel" style="width: 60%; height: 70%;">
+        <h1 class="heading">Zespo - Chat Application</h1>
+        <div id="connectingStatus">Connecting...</div>
+        <ul id="messageArea">
+
+        </ul>
+        <div style="position: relative; width: 93%; height:5%; margin: 1rem">
+            <input id="messageInput" type="text" placeholder="Message" style="display: inline; border-radius: 1rem; height:100%; width: 100%; padding-left: 1rem;">
+            <button id="sendBtn"><span class="material-symbols-outlined" style="font-size: 18px;">
+                send
+            </span></button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</body>
+</html>
