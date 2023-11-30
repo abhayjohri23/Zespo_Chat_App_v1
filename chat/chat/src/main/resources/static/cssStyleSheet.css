@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 * {
     margin: 0;
+    /* box-sizing: border-box; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #userLoginPanel {
     height: 100vh;
     width: 100%;
@@ -66,9 +69,11 @@
 }
 
 #connectingStatus{
+    margin: 0;
     font-weight: 300;
     margin: 1rem;
     text-align: center;
+    position: absolute;
 }
 
 .centrePanel ul{
@@ -87,3 +92,53 @@
     background-color: rgba(255,255,255,0);
 }
 
+.hidden {
+    display: none;
+}
+
+.chat-message {
+    display: grid;
+    grid-template-columns: 2.5rem 95%;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0);
+}
+
+.event-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#messageArea {
+    height: 75%;
+    margin:0.5rem;
+    overflow-y: hidden;
+}
+
+.messageSpan{
+    font-weight: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nameHeader{
+    font-weight: 800;
+}
+
+.avatarLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+#messageInput{
+    display: inline; 
+    border-radius: 1rem; 
+    height:100%; 
+    width: 100%; 
+    padding-left: 1rem;
+}
